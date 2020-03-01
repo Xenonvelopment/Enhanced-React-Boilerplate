@@ -1,0 +1,15 @@
+export CWD=$(pwd)
+
+export AWS_SHARED_CREDENTIALS_FILE=$CWD/.aws_credentials
+export AWS_DEFAULT_REGION=$REGION
+
+export SERVICE=$BUILD_SERVICE
+export STAGE=$BUILD_STAGE
+
+export TF_VAR_STAGE=$STAGE
+export TF_VAR_SERVICE=$SERVICE
+export TF_VAR_REGION=$REGION
+
+export S3_TERRAFORM_STATE_BUCKET=firemind-example-terraform-state
+export S3_TERRAFORM_STATE_KEY_PREFIX=terraform
+export S3_TERRAFORM_STATE_REGION=$REGION
